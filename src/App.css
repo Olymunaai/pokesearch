@@ -1,38 +1,176 @@
-.App {
+/* ////////////////////// HEADER */
+
+.headTitle {
+  padding: 20px 0px;
+  color: white;
+  display: inline-block;
+  font-size: 3rem;
+}
+
+.head {
+  width: 80%;
+  margin: auto;
+}
+
+@media (max-width: 575px) {
+  .headTitle {
+    font-size: 2.25rem;
+  }
+}
+
+/* ////////////////////// SEARCHBAR */
+
+#searchInput {
+  width: 60%;
+}
+
+.submitButton {
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media (max-width: 575px) {
+  .search {
+    width: 100%;
+    margin-left: 0 !important;
+    margin-top: 0.5rem;
+  }
+}
+
+/* ////////////////////// ENTRY */
+
+.sprite {
+  margin-bottom: 15px;
+  width: 120px;
+}
+
+.pkmnCard {
+  border-radius: 15px;
+  max-width: 90%;
+  width: fit-content;
+  margin: 20px auto;
+  box-shadow: 0px 0px 15px 2px #888888;
+  padding: 20px;
+  height: fit-content;
+}
+
+.pokemonEntry {
+  width: 100%;
+  margin: auto auto 40px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.pkmnTitles {
+  text-align: center;
+  margin: 20px auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.pokeid {
+  font-size: 1.5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.HA {
+  font-size: 0.75rem;
+  margin-top: 2rem;
+}
+
+/* types */
+
+.pokemonEntry h6 {
+  width: 100px;
+  border-radius: 10px;
+  margin: 5px auto;
+  height: 1.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  border: solid 1px black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.normal {
+  background-color: #a8a878;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fighting {
+  background-color: #c03028;
+}
+
+.flying {
+  background-color: #a890f0;
+}
+
+.poison {
+  background-color: #a040a0;
+}
+
+.ground {
+  background-color: #e0c068;
+}
+
+.rock {
+  background-color: #b8a038;
+}
+
+.bug {
+  background-color: #a8b820;
+}
+
+.ghost {
+  background-color: #705898;
+}
+
+.steel {
+  background-color: #b8b8d0;
+}
+
+.water {
+  background-color: #6890f0;
+}
+
+.fire {
+  background-color: #f08030;
+}
+
+.grass {
+  background-color: #78c850;
+}
+
+.electric {
+  background-color: #f8d030;
+}
+
+.psychic {
+  background-color: #f85888;
+}
+
+.ice {
+  background-color: #98d8d8;
+}
+.dragon {
+  background-color: #7038f8;
+}
+
+.dark {
+  background-color: #705848;
+}
+.fairy {
+  background-color: #ee99ac;
+}
+
+.statsList {
+  list-style: none;
+  margin: 35px auto;
+  padding: 0;
+}
+
+.ability {
+  margin: 0px auto;
+}
+
+.moves {
+  width: 720px;
 }
