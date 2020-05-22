@@ -27,7 +27,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Search searchName={searchName} searchNumber={searchNumber} />
+      <Search searchName={searchName} />
       <Pokemon pokemon={pokemon.data} loading={loading} />
     </div>
   );
