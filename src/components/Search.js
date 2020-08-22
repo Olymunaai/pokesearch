@@ -13,9 +13,14 @@ const Search = (props) => {
     setText("");
   };
 
+  const submitRandom = (e) => {
+    e.preventDefault();
+    props.searchName(Math.floor(Math.random() * 800).toString());
+  };
+
   return (
     <div className="">
-      <form className="container form-inline mb-2 mt-5" onSubmit={submitName}>
+      <form className="container form-inline mb-2 mt-5">
         <div className="m-auto">
           <label className="mb-2 text-left">Enter name or number...</label>
           <input
@@ -24,8 +29,15 @@ const Search = (props) => {
             onChange={textChange}
             value={text}
           />
-          <button type="submit" className="btn btn-dark ml-2 search">
+          <button
+            type="submit"
+            onClick={submitName}
+            className="btn btn-dark ml-2 search"
+          >
             Search
+          </button>
+          <button onClick={submitRandom} className="btn btn-dark ml-2 search">
+            Random
           </button>
         </div>
       </form>
